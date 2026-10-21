@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	scanf("%d",&n);
+	int a[100];
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	int pos,k;
+	scanf("%d",&pos);
+	scanf("%d",&k);
+	for(i=pos;i<n;i++)
+	{
+		a[pos]=k;
+	}
+	for(i=0;i<n;i++)
+	{
+		printf("%d ",a[i]);
+	}
+	return 0;
+}
